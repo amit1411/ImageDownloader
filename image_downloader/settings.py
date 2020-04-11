@@ -102,8 +102,8 @@ REACTOR_THREADPOOL_MAXSIZE = 15
 DOWNLOAD_TIMEOUT = 60
 
 ROTATING_PROXY_LIST = [
-    '37.48.118.90:13042',
-    '83.149.70.159:13042',
+    'proxy_ip_1',
+    'proxy_ip_2',
     # ...
 ]
 
@@ -113,10 +113,10 @@ DOWNLOADER_MIDDLEWARES = {
     'rotating_proxies.middlewares.BanDetectionMiddleware': 620,
     # ...
 }
-IMAGES_STORE = 's3://sims4amit/images/'
+IMAGES_STORE = 's3://name_of_space/images/'
 # IMAGES_STORE = 'C:/Users/amag/Downloads/scrapy-master/image_downloader/downloads'
-AWS_ACCESS_KEY_ID = "4ULQWPAZZ7IVKRU4LEUS"
-AWS_SECRET_ACCESS_KEY = "kvPTctE+qUqfXk3dX5B69rAOkk+X8ZuULYT5QdE8PGE"
+AWS_ACCESS_KEY_ID = "Digital_Ocean_access_id"
+AWS_SECRET_ACCESS_KEY = "Digital_Ocean_access_key"
 AWS_ENDPOINT_URL = 'https://nyc3.digitaloceanspaces.com'
 AWS_REGION_NAME = "nyc3"
 AWS_USE_SSL = False
