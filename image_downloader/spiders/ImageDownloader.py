@@ -4,9 +4,9 @@ from ..items import MyImage
 import base64
 
 class RedbubSpider(scrapy.Spider):
-    name = 'redbub'
-    allowed_domains = ['modthesims.info']
-    start_urls = ['https://modthesims.info/browse/ts4/38/']
+    name = 'ImageDownloader'
+    allowed_domains = ['Website_Domain']
+    start_urls = ['Website_URL']
 
     def parse(self, response):
         links = response.css('#masonrycontainer .bold a::attr(href)').extract()
